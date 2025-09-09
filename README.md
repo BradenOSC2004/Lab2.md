@@ -39,7 +39,7 @@ Command to SSH to AWS instance:
 3. Evaluate if `ubuntu` can add files to new user's home directory: Yes they can
 4. Command to switch to new user: sudo su
 5. Command(s) to go to new user's home directory: cd
-6. Evaluate if new user can add files to user's home directory: putting to the permissions 770 let me add some files
+6. Evaluate if new user can add files to user's home directory: putting the permissions to 770, let me add some files
 7. Command to return to `ubuntu` user: sudo su ubuntu
 8. Command to return to `ubuntu` home directory: cd
 
@@ -49,8 +49,8 @@ Command to SSH to AWS instance:
 2. Command(s) to add `ubuntu` & user to group `squad`: sudo usermod -G ubuntu, sudo usermod -G bhenry
 3. Command(s) to allow `squad` to view the `ubuntu` user's home directory contents: sudo chmod 750 /home/ubuntu, sudo chgrp squad /home/ubuntu
 4. Command(s) to modify `share` to have group ownership of `squad`: sudo chgrg -R squad share
-5. Describe your tests and commands with the user account: Because of the group squad I can now look at the home directory because of it, when before I was denied. Additionally because of permissions given to the group, I can now add a file to it. 
-6. Describe the full set of permissions / settings that enable the user to make edits: As the user Bhenry when creating a file in the share folder, I added permission 770 which meant the user and the group could read, write, and execute files. Like before the permissions given in the group as well allows bhenry to make edits or add things.  
+5. Describe your tests and commands with the user account: Because of the group squad, I can now look at the home directory, when before I was denied. Additionally, because of permissions given to the group, I can now add a file to it. 
+6. Describe the full set of permissions / settings that enable the user to make edits: As the user Bhenry, when creating a file in the share folder, I added permission 770 which meant the user and the group could read, write, and execute files. Like before the permissions given in the group as well allows bhenry to make edits or add things.  
 
 ## Part 5 Answers
 
@@ -80,6 +80,8 @@ Contents inside of `share`
 
 ## Citations
 
-To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
+https://linuxize.com/post/how-to-add-user-to-group-in-linux/
+https://www.redhat.com/en/blog/linux-user-group-management
+
 
  
